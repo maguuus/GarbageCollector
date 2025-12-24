@@ -19,7 +19,6 @@ class Program
 
         GC.Collect();
         GC.WaitForPendingFinalizers();
-        GC.Collect();
             
         var stopwatch = Stopwatch.StartNew();
 
@@ -36,7 +35,6 @@ class Program
 
         GC.Collect();
         GC.WaitForPendingFinalizers();
-        GC.Collect();
 
         PrintResults(stopwatch.Elapsed);
     }
